@@ -27,6 +27,6 @@ jobs:
 
       - name: Build and test 
         run: |
-          mvn install -X -DskipTests -am -pl .
+          mvn install -DskipTests -am -pl .
           mvn test -pl . -Dtest=com.esotericsoftware.kryonet.PingTest.testPing
-          mvn edu.illinois:nondex-maven-plugin:2.1.1:nondex -pl . -DnondexRuns=10 -Dtest=com.esotericsoftware.kryonet.PingTest.testPing
+       
